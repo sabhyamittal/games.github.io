@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html>
 
-   <head>
-      <title>HTML Frames</title>
-   </head>
-	
-   <frameset rows = "10%,80%,10%">
-      <frame name = "top" src = "snake.html" />
-      <frame name = "main" src = "suduko.html" />
-      <frame name = "bottom" src = "tic.html" />
-   
-      <noframes>
-         <body>Your browser does not support frames.</body>
-      </noframes>
-      
-   </frameset>
-   
+<head>
+   <style>
+      * {
+         font-size: 50px;
+         font-weight: bold;
+      }
+
+      body {
+         height: 100vh;
+         background: linear-gradient(135deg, #8052ec, #d161ff);
+      }
+      .a{
+         color: rgb(62, 57, 56);
+      }
+      div.lists{
+         border: 1px solid black;
+         height: 400px;
+         width: 600px;
+         text-align: center;
+         border-radius: 20px;
+         border-width: 5px;
+      }
+      ol.items{
+         display: inline-block;
+         text-align: left; 
+      }
+   </style>
+</head>
+
+<body>
+   <h1>Play Games!!</h1>
+   <div class="lists">
+   <ol class="items">
+      <li><a href="snake.html" class="a">Play Snake Game!!</a></li>
+      <li><a href="suduko.html" class="a">Play Suduko Game!!</a></li>
+      <li><a href="tic.html" class="a">Play Tic-Tac-Toe Game!!</a></li>
+   </ol>
+</div>
+</body>
 </html>
